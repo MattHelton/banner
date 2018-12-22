@@ -1,16 +1,22 @@
 
 name = 'Matt Helton'
 
-hello = "Hello World! My name is #{name}"
 
-puts hello
+
+
 
 # language array and iterator
 languages = ['Ruby', 'JavaScript', 'HTML5', 'CSS']
 
-languages.each do |language|
-    puts language
+introduction = languages.each do |language|
+    print language + ' '
 end
+
+
+
+
+puts introduction
+
 
 # frameworks and libraries array and iterator
 frameworks_and_libraries = ['React', 'Rails', 'Bootstrap', 'Rspec', 'Chai', 'Redux']
@@ -18,3 +24,7 @@ frameworks_and_libraries = ['React', 'Rails', 'Bootstrap', 'Rspec', 'Chai', 'Red
 frameworks_and_libraries.each do |x|
     puts x
 end
+
+hello = "Hello World! My name is #{name}, and I love #{introduction}"
+
+puts hello
