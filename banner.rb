@@ -5,7 +5,7 @@ name = 'Matt Helton'
 
 def list_handler(list)
     list.each do |x|
-        return x
+        puts x
     end
 end
 
@@ -21,6 +21,6 @@ frameworks_and_libraries = ['React', 'Rails', 'Bootstrap', 'Rspec', 'Chai', 'Red
 # skills array and itterator
 frameworks_and_libraries_list = list_handler(frameworks_and_libraries)
 
-hello = "Hello World! My name is #{name}, and I love #{language_list} Especially when they let me use #{frameworks_and_libraries_list}"
+hello = "Hello World! My name is #{name}, and I love #{language_list.join(", and ")}! Especially when they give me an excuse to use #{frameworks_and_libraries_list.join(" or ")} or all of them in the same project!"
 
 puts hello
