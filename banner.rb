@@ -4,9 +4,7 @@ name = 'Matt Helton'
 
 
 def list_handler(list)
-    list.each do |x|
-        puts x
-    end
+    list.each { |x| puts x}
 end
 
 
